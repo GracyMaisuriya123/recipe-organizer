@@ -1,0 +1,319 @@
+
+.btn-grad {background-image: linear-gradient(to right, #C04848 0%, #480048  51%, #C04848  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  .container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    color: antiquewhite;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display: flex;
+  }
+  
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("images/1.jpeg");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("images/2.jpeg");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("images/3.jpeg");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("images/4.jpeg");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("images/5.jpeg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("images/6.webp");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("images/7.webp");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("images/8.jpeg");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("images/9.jpeg");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    
+    background-image: linear-gradient( 111.9deg,  rgba(255,255,169,1) 0.2%, rgba(255,208,120,1) 14.1%, rgba(255,156,94,1) 27.4%, rgba(251,99,95,1) 41.4%, rgba(226,28,114,1) 55.8%, rgba(176,0,140,1) 70.2%, rgba(83,0,166,1) 84.1% );}
+.extra-space{
+    margin-top: 567px;
+}
+/* Center the app container */
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #260781;
+    margin-bottom: 30px;
+}
+.Created-by{
+    margin-top: 40px;
+    margin-bottom: -200px;
+}
+/* Buttons */
+button {
+    background-color: #4a90e2;
+    
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ab7;
+}
+
+#logout-btn {
+    background-color: #e94e77;
+}
+
+#logout-btn:hover {
+    background-color: #c7415f;
+}
+
+/* Recipe Form Styling */
+form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form button {
+    background-color: #28a745;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Recipe List */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+#recipe-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recipe-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#recipe-list li img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+#recipe-list li div {
+    flex-grow: 1;
+}
+
+#recipe-list li button {
+    background-color: #f7c54c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#recipe-list li button:hover {
+    background-color: #e6b132;
+}
+
+/* Edit Recipe Form */
+#edit-recipe-form {
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#save-edit-btn {
+    background-color: #28a745;
+}
+
+#save-edit-btn:hover {
+    background-color: #218838;
+}
+
+#cancel-edit-btn {
+    background-color: #e94e77;
+}
+
+#cancel-edit-btn:hover {
+    background-color: #c7415f;
+}
+
+/* Chatbot Section */
+#chatbot {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+#chatbot h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+#chatbot input {
+    width: calc(100% - 120px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#chatbot button {
+    padding: 10px;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#chatbot button:hover {
+    background-color: #357ab7;
+}
+
+#chat-response {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+
+  

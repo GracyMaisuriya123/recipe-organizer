@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <div class="wave">
+      <div class="wave">
+        <div class="wave">
+    <div id="app">
+        <h1>Recipe Organizer</h1>
+        <div class="container">
+          <div class="carousel">
+            <div class="carousel__face"><span>This website is</span></div>
+            <div class="carousel__face"><span>Very special</span></div>
+            <div class="carousel__face"><span>which will help you</span></div>
+            <div class="carousel__face"><span>to add your recipes</span></div>
+            <div class="carousel__face"><span>Modify it</span></div>
+            <div class="carousel__face"><span>And also filter it</span></div>
+            <div class="carousel__face"><span>Try out</span></div>
+            <div class="carousel__face"><span>See For Yourself</span></div>
+            <div class="carousel__face"><span>Woow</span></div>
+          </div>
+        </div>
+    <div class="extra-space">
+        <button id="login-btn" class="btn-grad">Login</button>
+        <button id="logout-btn" style="display: none;">Logout</button>
+        
+        <!-- Add Recipe Form -->
+        <form id="recipe-form">
+            <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+            <input type="text" id="ingredients" placeholder="Ingredients (comma separated)" required>
+            <input type="text" id="meal-type" placeholder="Meal Type (e.g., Breakfast, Dinner)" required>
+           
+            <button class="btn-grad" type="submit">Add Recipe</button>
+        </form>
+
+        <h2>Recipes</h2>
+        <input type="text" id="search" placeholder="Search by ingredient...">
+        <ul id="recipe-list"></ul>
+
+        <!-- Edit Recipe Form (Hidden) -->
+        <div id="edit-recipe-form" style="display:none;">
+            <input type="text" id="edit-recipe-name" placeholder="Recipe Name" required>
+            <input type="text" id="edit-ingredients" placeholder="Ingredients (comma separated)" required>
+            <input type="text" id="edit-meal-type" placeholder="Meal Type" required>
+           
+            <button id="save-edit-btn">Save Changes</button>
+            <button id="cancel-edit-btn">Cancel</button>
+        </div>
+
+        <div id="chatbot">
+            <h3>AI Chatbot</h3>
+            <input type="text" id="chat-input" placeholder="Ask for a recipe...">
+            <button id="chat-submit">Send</button>
+            <div id="chat-response"></div>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+<div><div> <h1 class="Created-by">Created By</h1></div></div>
+<object type="text/html" data="card.html" style="width:100vw; height:100vh;"></object>
+
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="recipes.js"></script>
+    <script type="module" src="chatbot.js"></script>
+    <script type="module" src="biometrics.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

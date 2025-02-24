@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase": "^11.3.1",
+    "node-fetch": "^3.3.2"
+  },
+  "name": "recipe-organizer",
+  "version": "1.0.0",
+  "description": "A web app for organizing and managing recipes.",
+  "main": "auth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://GracyMaisuriya123@github.com/GracyMaisuriya123/recipe-organizer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GracyMaisuriya123/recipe-organizer/issues"
+  },
+  "homepage": "https://github.com/GracyMaisuriya123/recipe-organizer#readme"
+}
