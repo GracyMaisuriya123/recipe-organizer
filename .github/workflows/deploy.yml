@@ -1,0 +1,32 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install  # Change to `yarn install` if using Yarn
+
+      - name: Lint code
+        run: npm run lint  # Ensure you have a lint script in package.json
+
+      - name: Run tests
+        run: npm test  # Ensure you have tests configured
+
+      - name: Build project
+        run: npm run build  # Ensure you have a build script
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build  # Change this if your output folder is different
