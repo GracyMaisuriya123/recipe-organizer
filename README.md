@@ -23,7 +23,7 @@ To run the app locally, follow these steps:
 
 ### Clone the Repository
    ```bash
-   git clone https://github.com/<your-username>/recipe-organizer.git
+   git clone https://github.com/gracymaisuriya123/recipe-organizer.git
    cd recipe-organizer
    npm install
    npm start
