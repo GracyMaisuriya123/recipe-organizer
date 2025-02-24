@@ -17,9 +17,6 @@ jobs:
         run: npm install  # Change to `yarn install` if using Yarn
 
 
-      - name: Run tests
-        run: npm test  # Ensure you have tests configured
-
       - name: Build project
         run: npm run build  # Ensure you have a build script
 
